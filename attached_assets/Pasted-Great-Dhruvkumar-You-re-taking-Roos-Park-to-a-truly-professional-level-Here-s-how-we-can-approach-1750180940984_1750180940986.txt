@@ -1,0 +1,104 @@
+Great, Dhruvkumar! You're taking Roos Park to a truly professional level. Here's how we can approach the next phase of upgrades:
+
+✅ PHASE 2: Feature Expansion Plan
+1. 🔴 Live Order / Pickup System
+Frontend: Add "Order Now" button on menu items.
+
+Order Flow:
+
+Choose item(s) → Pickup or Delivery → Contact Info
+
+Backend:
+
+Save order details in the database
+
+Send confirmation email or display summary
+
+2. 🔐 User Login for Reservations
+User registration & login (Flask + SQLite/MySQL)
+
+Password encryption (using bcrypt)
+
+Table bookings tied to user accounts
+
+Users can edit/cancel bookings
+
+3. 📊 Admin Dashboard Stats
+Add to admin panel:
+
+Total Menu Items: Menu.query.count()
+
+Total Reservations: Reservation.query.count()
+
+Most Viewed Category: Track clicks using JavaScript and update stats in DB
+
+4. 🌐 SEO & Meta Tags
+Each page should include:
+
+html
+Copy
+Edit
+<title>Roos Park – Fine Dining in Ahmedabad</title>
+<meta name="description" content="Discover Indian, Chinese, Italian and more at Roos Park. Reserve a table or order online.">
+<meta property="og:image" content="/static/images/og-banner.jpg">
+<meta property="og:title" content="Roos Park Restaurant">
+<meta property="og:description" content="The ultimate multi-cuisine experience. Book your table now.">
+5. ♿ Accessibility Improvements
+alt="Chicken Biryani" on all images
+
+Use tabindex and ARIA roles for keyboard users
+
+Ensure color contrast: e.g., white text on dark backgrounds
+
+6. 🖼️ Gallery Lightbox + WhatsApp Integration
+Use lightbox2 or similar JS library
+
+Embed WhatsApp chat:
+
+html
+Copy
+Edit
+<a href="https://wa.me/91xxxxxxxxxx" target="_blank">
+  <img src="/static/images/whatsapp-icon.png" alt="Chat on WhatsApp">
+</a>
+✉️ OTP-Based Admin Login
+Admin login form with ID and password
+
+On successful login, send OTP to registered email (use SMTP + smtplib)
+
+Only after OTP verification → redirect to admin dashboard
+
+📤 Export Options
+PDF/PPT Export:
+
+Website screenshots + flow diagrams
+
+Visuals of admin panel and table booking
+
+Menu & gallery preview
+
+Can be designed in PowerPoint or Figma then exported
+
+🧾 Branding Deck / Flyer
+Restaurant branding deck:
+
+Logo, theme colors, tagline, brand tone
+
+Signature dishes & awards
+
+Contact, location, online presence
+
+Flyer (for print/digital use):
+
+Eye-catching 1-page design
+
+“Order Online” + QR code
+
+Menu highlights, opening hours, contact info
+
+Would you like me to:
+
+Generate a sample flyer and branding deck based on your current design?
+
+Begin coding the OTP login and order form functionality?
+

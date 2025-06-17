@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(45, 29%, 97%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(25, 65%, 28%);
+  --primary-foreground: hsl(60, 9.1%, 97.8%);
+  --secondary: hsl(38, 92%, 50%);
+  --secondary-foreground: hsl(25, 65%, 28%);
+  --accent: hsl(45, 29%, 97%);
+  --accent-foreground: hsl(25, 65%, 28%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Roos Park custom colors */
+  --roos-brown: hsl(25, 65%, 28%);
+  --roos-chocolate: hsl(25, 76%, 45%);
+  --roos-gold: hsl(43, 74%, 49%);
+  --roos-beige: hsl(45, 29%, 97%);
+  --roos-green: hsl(120, 61%, 34%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(25, 65%, 28%);
+  --primary-foreground: hsl(60, 9.1%, 97.8%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-roos-brown {
+    color: var(--roos-brown);
+  }
+  
+  .text-roos-chocolate {
+    color: var(--roos-chocolate);
+  }
+  
+  .text-roos-gold {
+    color: var(--roos-gold);
+  }
+  
+  .bg-roos-brown {
+    background-color: var(--roos-brown);
+  }
+  
+  .bg-roos-chocolate {
+    background-color: var(--roos-chocolate);
+  }
+  
+  .bg-roos-gold {
+    background-color: var(--roos-gold);
+  }
+  
+  .bg-roos-beige {
+    background-color: var(--roos-beige);
+  }
+  
+  .bg-roos-green {
+    background-color: var(--roos-green);
+  }
+  
+  .border-roos-brown {
+    border-color: var(--roos-brown);
+  }
+  
+  .hover\:bg-roos-chocolate:hover {
+    background-color: var(--roos-chocolate);
+  }
+  
+  .hover\:text-roos-brown:hover {
+    color: var(--roos-brown);
+  }
+  
+  .hover\:text-roos-gold:hover {
+    color: var(--roos-gold);
+  }
+  
+  .focus\:border-roos-brown:focus {
+    border-color: var(--roos-brown);
+  }
+}
